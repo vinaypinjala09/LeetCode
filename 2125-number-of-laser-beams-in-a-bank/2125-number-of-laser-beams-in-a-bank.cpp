@@ -9,9 +9,7 @@ public:
                 int curr = 0;
                 for(int j = 0;j<m;j++){
                     
-                    if(bank[i][j] == '1'){
-                        curr++;
-                    }
+                   curr += bank[i][j]-'0';
                     
                 }
                 if(curr){
