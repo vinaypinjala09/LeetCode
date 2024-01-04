@@ -7,7 +7,10 @@ public:
         for(int i=1;i<n;i++){
             string s = invert(vec[i-1]);
             reverse(s.begin(),s.end());
-            vec[i] = vec[i-1]+"1"+s;
+            vec[i] = vec[i-1]+"1"+s; 
+            if(vec[i].size()>=k){
+                return vec[i][k-1];
+            }
         }
         
         return vec[n-1][k-1];
