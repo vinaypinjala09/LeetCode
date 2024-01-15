@@ -21,11 +21,13 @@ public:
     void DFS(TreeNode *root){
         if(root == NULL) return;
         
+        
+        DFS(root->left);
+        DFS(root->right); 
+        
+        
         TreeNode* temp = root->left;
         root->left = root->right;
         root->right = temp; 
-        
-        DFS(root->left);
-        DFS(root->right);
     }
 };
