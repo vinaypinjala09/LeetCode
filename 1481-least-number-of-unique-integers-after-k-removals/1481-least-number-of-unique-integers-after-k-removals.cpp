@@ -1,12 +1,8 @@
 class Solution {
-// private:
-//      static bool  comp(pair<int,int>&A,pair<int,int>&B){
-         
-//          return A.second < B.second;
-//      }
+
 public:
     int findLeastNumOfUniqueInts(vector<int>& arr, int k) {
-        int count = 0;
+        
         unordered_map<int,int>umap;
         
         for(int &num:arr){
