@@ -25,9 +25,6 @@ public:
     }
     
     static bool comp(vector<int>a, vector<int>b){
-        if (a[1] > b[1]){
-            return true;
-        }
-        return false;
+        return a[1] > b[1];
     }
 };
