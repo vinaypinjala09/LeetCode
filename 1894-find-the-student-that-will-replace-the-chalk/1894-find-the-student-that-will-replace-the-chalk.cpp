@@ -11,8 +11,7 @@ public:
             sum += i;    
         }
         
-        int t = p / sum; 
-        p -= (t*sum);
+        p = p % sum;
         
         while(true){
             
